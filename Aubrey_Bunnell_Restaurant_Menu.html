@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Aubrey Bunnell">
+  <title>Aubrey Bunnell - Restaurant Menu Assignment</title>
+</head>
+<body style="margin:0;padding:24px 12px 30px;background-color:#F7F5F0;font-family:Arial,Helvetica,sans-serif;color:#3E4436;">
+  <header style="text-align:center;margin:0 auto 12px;">
+    <p style="margin:0 0 20px;font-size:12px;color:#67715F;">Aubrey Bunnell</p>
+    <p style="margin:0 0 7px;font-size:10px;font-weight:bold;letter-spacing:3px;color:#79816F;">THE NEIGHBORHOOD CAFÉ</p>
+    <h1 style="margin:0 0 8px;font-family:Georgia,serif;font-size:42px;font-weight:normal;line-height:1.2;">Citrus &amp; Sage</h1>
+    <p style="margin:0 0 5px;font-family:Georgia,serif;font-size:15px;font-style:italic;color:#79816F;">Good food, all day.</p>
+  </header>
+  <main style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;max-width:1320px;margin:0 auto;">
+    <!-- Each menu is exactly 400px by 550px, including its padding and border.
+         The original SVG background is embedded so this file works by itself. -->
+    <div class="menu" aria-labelledby="breakfast-title" style="box-sizing:border-box;width:400px;height:550px;flex:0 0 400px;position:relative;padding:27px 26px;margin:14px;border:2px solid #DEC6A0;background-color:#FFF8E9;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22550%22%20viewBox%3D%220%200%20400%20550%22%3E%3Crect%20width%3D%22400%22%20height%3D%22550%22%20fill%3D%22%23FFF8E9%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23B87A38%22%20stroke-width%3D%221.5%22%20opacity%3D%22.42%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%22327%22%20cy%3D%2268%22%20r%3D%2242%22%20fill%3D%22%23F7D79A%22%2F%3E%3Ccircle%20cx%3D%22327%22%20cy%3D%2268%22%20r%3D%2234%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M327%2034V102M293%2068H361M303%2044L351%2092M303%2092L351%2044%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M315%2025Q324%204%20344%2011Q344%2028%20322%2028%22%20fill%3D%22%23B6BB81%22%20stroke%3D%22%23818757%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20transform%3D%22translate%280%2C24%29%22%20d%3D%22M365%20535Q348%20498%20371%20470M365%20526Q343%20529%20336%20510Q357%20503%20363%20521M364%20506Q386%20507%20388%20488Q368%20483%20364%20499%22%20stroke%3D%22%23A18C64%22%20fill%3D%22%23E5D3A8%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:center top;background-size:100% 100%;color:#473629;text-align:left;">
+      <p style="margin:0 0 10px;font-size:10px;letter-spacing:2px;font-weight:bold;color:#87502E;">CITRUS &amp; SAGE CAFÉ</p>
+      <h2 id="breakfast-title" style="margin:0 0 7px;font-family:Georgia,serif;font-size:38px;font-weight:normal;line-height:43px;color:#87502E;">Breakfast</h2>
+      <p style="margin:0 0 19px;font-size:10px;letter-spacing:1.3px;color:#776453;">7:00 AM - 11:00 AM</p>
+      <div style="border-top:1px solid #DFCDB2;padding-top:15px;">
+        <h3 style="margin:0 0 12px;font-size:10px;letter-spacing:2px;color:#87502E;">FROM THE KITCHEN</h3>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Lemon Ricotta Pancakes</span><span>$12</span></p>
+          <p style="margin:0;color:#776453;font-size:12px;line-height:16px;">Fresh berries, maple syrup</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Avocado Toast</span><span>$11</span></p>
+          <p style="margin:0;color:#776453;font-size:12px;line-height:16px;">Sourdough, cherry tomatoes, lemon</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Sunrise Breakfast Sandwich</span><span>$12</span></p>
+          <p style="margin:0;color:#776453;font-size:12px;line-height:16px;">Egg, cheddar, bacon, toasted brioche</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Berry Yogurt Bowl</span><span>$9</span></p>
+          <p style="margin:0;color:#776453;font-size:12px;line-height:16px;">Greek yogurt, granola, seasonal berries</p>
+        </div>
+      </div>
+      <div style="margin-top:15px;border-top:1px solid #DFCDB2;padding-top:13px;">
+        <h3 style="margin:0 0 11px;font-size:10px;letter-spacing:2px;color:#87502E;">TO SIP</h3>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Honey Vanilla Latte</span><span>$5</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Fresh Orange Juice</span><span>$4</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Brewed Coffee</span><span>$3</span></p>
+      </div>
+      <p style="position:absolute;bottom:23px;left:26px;margin:0;font-family:Georgia,serif;font-size:12px;font-style:italic;color:#776453;">A bright start to the day.</p>
+    </div>
+    <!-- Each menu is exactly 400px by 550px, including its padding and border.
+         The original SVG background is embedded so this file works by itself. -->
+    <div class="menu" aria-labelledby="lunch-title" style="box-sizing:border-box;width:400px;height:550px;flex:0 0 400px;position:relative;padding:27px 26px;margin:14px;border:2px solid #BACAB2;background-color:#F3F6ED;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22550%22%20viewBox%3D%220%200%20400%20550%22%3E%3Crect%20width%3D%22400%22%20height%3D%22550%22%20fill%3D%22%23F3F6ED%22%2F%3E%3Cg%20fill%3D%22%23B5C8A4%22%20stroke%3D%22%23709060%22%20stroke-width%3D%221.5%22%20opacity%3D%22.48%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M310%20130Q337%2085%20363%2017%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M351%2049Q320%2047%20324%2022Q354%2021%20351%2049M346%2066Q370%2069%20381%2043Q354%2036%20346%2066M335%2088Q306%2082%20309%2061Q337%2060%20335%2088M326%20107Q354%20111%20364%2085Q338%2078%20326%20107%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20transform%3D%22translate%280%2C24%29%22%20d%3D%22M338%20535Q364%20506%20383%20471%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20transform%3D%22translate%280%2C24%29%22%20d%3D%22M364%20503Q341%20501%20344%20482Q366%20480%20364%20503M352%20520Q376%20524%20383%20506Q361%20499%20352%20520%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:center top;background-size:100% 100%;color:#2D4234;text-align:left;">
+      <p style="margin:0 0 10px;font-size:10px;letter-spacing:2px;font-weight:bold;color:#3F644A;">CITRUS &amp; SAGE CAFÉ</p>
+      <h2 id="lunch-title" style="margin:0 0 7px;font-family:Georgia,serif;font-size:38px;font-weight:normal;line-height:43px;color:#3F644A;">Lunch</h2>
+      <p style="margin:0 0 19px;font-size:10px;letter-spacing:1.3px;color:#627463;">11:00 AM - 4:00 PM</p>
+      <div style="border-top:1px solid #C7D3BF;padding-top:15px;">
+        <h3 style="margin:0 0 12px;font-size:10px;letter-spacing:2px;color:#3F644A;">FROM THE KITCHEN</h3>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Lemon Chicken Bowl</span><span>$15</span></p>
+          <p style="margin:0;color:#627463;font-size:12px;line-height:16px;">Herbed rice, cucumber, tahini dressing</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Caprese Panini</span><span>$13</span></p>
+          <p style="margin:0;color:#627463;font-size:12px;line-height:16px;">Mozzarella, tomato, basil pesto</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Citrus Garden Salad</span><span>$12</span></p>
+          <p style="margin:0;color:#627463;font-size:12px;line-height:16px;">Mixed greens, orange, avocado, almonds</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Roasted Tomato Soup</span><span>$8</span></p>
+          <p style="margin:0;color:#627463;font-size:12px;line-height:16px;">Basil, cream, toasted sourdough</p>
+        </div>
+      </div>
+      <div style="margin-top:15px;border-top:1px solid #C7D3BF;padding-top:13px;">
+        <h3 style="margin:0 0 11px;font-size:10px;letter-spacing:2px;color:#3F644A;">TO SIP</h3>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Mint Lemonade</span><span>$4</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Peach Iced Tea</span><span>$4</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Sparkling Water</span><span>$3</span></p>
+      </div>
+      <p style="position:absolute;bottom:23px;left:26px;margin:0;font-family:Georgia,serif;font-size:12px;font-style:italic;color:#627463;">Fresh flavors. A little sunshine.</p>
+    </div>
+    <!-- Each menu is exactly 400px by 550px, including its padding and border.
+         The original SVG background is embedded so this file works by itself. -->
+    <div class="menu" aria-labelledby="dinner-title" style="box-sizing:border-box;width:400px;height:550px;flex:0 0 400px;position:relative;padding:27px 26px;margin:14px;border:2px solid #D3BBC8;background-color:#FCF3F5;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22550%22%20viewBox%3D%220%200%20400%20550%22%3E%3Crect%20width%3D%22400%22%20height%3D%22550%22%20fill%3D%22%23FCF3F5%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23A57791%22%20stroke-width%3D%221.5%22%20opacity%3D%22.50%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M348%2023A42%2042%200%201%200%20371%2092A36%2036%200%200%201%20348%2023Z%22%20fill%3D%22%23E9C8D6%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M375%2019V31M369%2025H381M295%2025V35M290%2030H300M375%20119V129M370%20124H380%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%22291%22%20cy%3D%2291%22%20r%3D%222%22%20fill%3D%22%23A57791%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20transform%3D%22translate%280%2C24%29%22%20d%3D%22M331%20536Q361%20514%20383%20479M349%20523Q330%20517%20337%20502Q356%20505%20349%20523M360%20510Q380%20513%20385%20496Q368%20491%20360%20510M372%20492Q353%20486%20363%20471Q380%20477%20372%20492%22%20fill%3D%22%23ECD7E1%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:center top;background-size:100% 100%;color:#493843;text-align:left;">
+      <p style="margin:0 0 10px;font-size:10px;letter-spacing:2px;font-weight:bold;color:#69485D;">CITRUS &amp; SAGE CAFÉ</p>
+      <h2 id="dinner-title" style="margin:0 0 7px;font-family:Georgia,serif;font-size:38px;font-weight:normal;line-height:43px;color:#69485D;">Dinner</h2>
+      <p style="margin:0 0 19px;font-size:10px;letter-spacing:1.3px;color:#7A6372;">4:00 PM - 9:00 PM</p>
+      <div style="border-top:1px solid #DECBD4;padding-top:15px;">
+        <h3 style="margin:0 0 12px;font-size:10px;letter-spacing:2px;color:#69485D;">FROM THE KITCHEN</h3>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Herb-Roasted Salmon</span><span>$23</span></p>
+          <p style="margin:0;color:#7A6372;font-size:12px;line-height:16px;">Lemon butter, rice, seasonal vegetables</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Creamy Mushroom Pasta</span><span>$18</span></p>
+          <p style="margin:0;color:#7A6372;font-size:12px;line-height:16px;">Fettuccine, Parmesan, fresh thyme</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Grilled Chicken Plate</span><span>$20</span></p>
+          <p style="margin:0;color:#7A6372;font-size:12px;line-height:16px;">Roasted potatoes, green beans</p>
+        </div>
+        <div style="margin:0 0 13px;">
+          <p style="display:flex;justify-content:space-between;gap:8px;margin:0 0 3px;font-size:14px;font-weight:bold;line-height:18px;"><span>Roasted Vegetable Flatbread</span><span>$16</span></p>
+          <p style="margin:0;color:#7A6372;font-size:12px;line-height:16px;">Zucchini, peppers, feta, basil pesto</p>
+        </div>
+      </div>
+      <div style="margin-top:15px;border-top:1px solid #DECBD4;padding-top:13px;">
+        <h3 style="margin:0 0 11px;font-size:10px;letter-spacing:2px;color:#69485D;">TO SIP</h3>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Blackberry Sparkler</span><span>$5</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Hibiscus Iced Tea</span><span>$4</span></p>
+        <p style="display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;line-height:17px;"><span>Hot Chamomile Tea</span><span>$3</span></p>
+      </div>
+      <p style="position:absolute;bottom:23px;left:26px;margin:0;font-family:Georgia,serif;font-size:12px;font-style:italic;color:#7A6372;">Slow evenings. Something delicious.</p>
+    </div>
+  </main>
+  <footer style="text-align:center;margin-top:14px;font-size:11px;color:#79816F;">Restaurant Menu Assignment · Basic Web Design</footer>
+</body>
+</html>
