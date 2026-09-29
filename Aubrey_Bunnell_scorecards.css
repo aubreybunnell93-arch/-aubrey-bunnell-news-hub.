@@ -79,7 +79,7 @@ th {
   background: #e7edf6;
 }
 
-/* Required pseudo class used in the table styling */
+/* Alternating rows and hover styling */
 tbody tr:nth-child(even) {
   background: #f7f9fc;
 }
@@ -114,3 +114,11 @@ th:first-child {
     min-width: 660px;
   }
 }
+
+/* Each scorecard has its own table ID in this shared style sheet. */
+#bowling { border: 2px solid #365b86; }
+#bowling th { background: #dce9f8; }
+#cornhole { border: 2px solid #38674c; }
+#cornhole th { background: #deeee2; }
+#golf { border: 2px solid #89652d; }
+#golf th { background: #f4e9d5; }
