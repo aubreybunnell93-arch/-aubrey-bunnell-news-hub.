@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aubrey Bunnell - Team Page</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f7fb;
+      color: #202433;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #252b43, #59627f);
+      color: white;
+      padding: 54px 22px 42px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2.25rem; }
+    header p { margin: 4px 0; }
+    .student-name { font-weight: 700; letter-spacing: 0.4px; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: white;
+      border-bottom: 1px solid #dfe2ea;
+      text-align: center;
+      padding: 13px;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 12px;
+      color: #37415f;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    nav a:hover { text-decoration: underline; }
+    main { width: min(920px, 92%); margin: 34px auto 60px; }
+    .intro { text-align: center; margin-bottom: 28px; }
+    .team-grid { max-width: 820px; margin: 0 auto; }
+    .member-card {
+      position: relative;
+      background: white;
+      border: 1px solid #dfe2ea;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 0 0 24px;
+      box-shadow: 0 8px 20px rgba(34, 42, 70, 0.08);
+      overflow: hidden;
+    }
+    .member-card::after { content: ""; display: table; clear: both; }
+    .member-photo {
+      float: left;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 0 24px 8px 0;
+      border-radius: 14px;
+      border: 3px solid #f0f1f6;
+    }
+    .member-copy h2 { margin: 10px 0 2px; }
+    .member-copy { padding-top: 30px; }
+    section[id] { scroll-margin-top: 70px; }
+    .role { margin: 0 0 10px; font-weight: 700; color: #59627f; }
+    .role-badge {
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      background: #eef0f6;
+      color: #38405b;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      color: #667085;
+      border-top: 1px solid #dfe2ea;
+      background: white;
+    }
+    @media (max-width: 620px) {
+      .member-photo {
+        float: none;
+        display: flex;
+        margin: 20px auto 16px;
+      }
+      .member-copy { text-align: center; }
+      .role-badge { position: static; display: inline-block; margin-bottom: 4px; }
+    }
+  </style>
+</head>
+<body id="home">
+  <header>
+    <p class="student-name">Aubrey Bunnell</p>
+    <h1>Meet Our Creative Team</h1>
+    <p>Meet the people behind our creative projects.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#team">Team</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="intro" id="team">
+      <h2>Our Team</h2>
+      <p>We combine planning, design, development, and content skills to build clear and useful web projects.</p>
+    </section>
+
+    <section class="team-grid" aria-label="Team members">
+      <article class="member-card">
+        <div class="role-badge">Team Lead</div>
+        <img class="member-photo" src="maya.svg" alt="Portrait illustration of Maya Chen">
+        <div class="member-copy">
+          <h2>Maya Chen</h2>
+          <p class="role">Team Lead</p>
+          <p>Maya keeps the group organized and makes sure each project stays on schedule. She enjoys planning, problem solving, and helping everyone work together.</p>
+        </div>
+      </article>
+
+      <article class="member-card">
+        <div class="role-badge">Designer</div>
+        <img class="member-photo" src="jordan.svg" alt="Portrait illustration of Jordan Lee">
+        <div class="member-copy">
+          <h2>Jordan Lee</h2>
+          <p class="role">Designer</p>
+          <p>Jordan focuses on the visual side of each project. They enjoy creating clean layouts, choosing colors, and making pages simple and easy to use.</p>
+        </div>
+      </article>
+
+      <article class="member-card">
+        <div class="role-badge">Developer</div>
+        <img class="member-photo" src="noah.svg" alt="Portrait illustration of Noah Martinez">
+        <div class="member-copy">
+          <h2>Noah Martinez</h2>
+          <p class="role">Developer</p>
+          <p>Noah builds and tests the team's web pages. He likes working with HTML and CSS, fixing problems, and making sure each page works correctly.</p>
+        </div>
+      </article>
+
+      <article class="member-card">
+        <div class="role-badge">Content Coordinator</div>
+        <img class="member-photo" src="sofia.svg" alt="Portrait illustration of Sofia Brooks">
+        <div class="member-copy">
+          <h2>Sofia Brooks</h2>
+          <p class="role">Content Coordinator</p>
+          <p>Sofia writes and organizes the content that goes on each page. She checks details, keeps the wording clear, and helps the team present ideas in an interesting way.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="intro" id="projects">
+      <h2>What We Do</h2>
+      <p>Our team works together to plan, design, build, and review web pages from start to finish.</p>
+    </section>
+
+    <section class="intro" id="contact">
+      <h2>Contact</h2>
+      <p>Team page project for Basic Web Design.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Aubrey Bunnell &mdash; Basic Web Design Team Page Assignment</p>
+  </footer>
+</body>
+</html>
