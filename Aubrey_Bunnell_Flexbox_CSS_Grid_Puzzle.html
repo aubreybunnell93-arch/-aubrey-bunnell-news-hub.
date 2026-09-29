@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aubrey Bunnell - Butterfly Puzzle</title>
+  <style>
+    body { margin: 0; padding: 24px; font-family: Arial, sans-serif;
+      background: #edf2e9; color: #233923; }
+    .page { display: grid; grid-template-columns: 1fr; gap: 20px;
+      max-width: 760px; margin: auto; }
+    header, section, footer { padding: 24px; border-radius: 12px;
+      background: white; border: 1px solid #c5d6bb; }
+    header { background: #345c39; color: white; }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 0; color: #345c39; }
+    .puzzle { display: flex; flex-wrap: wrap; justify-content: center;
+      align-content: flex-start; width: 100%; max-width: 600px;
+      margin: auto; }
+    .puzzle img { display: block; width: 25%; height: auto;
+      flex: 0 0 25%; }
+    .puzzle .extra { display: none; }
+    footer { text-align: center; }
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      header, section, footer { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Aubrey Bunnell</h1>
+      <p>Puzzle: Butterflies</p>
+      <p>Flexbox / CSS Grid Puzzle Assignment</p>
+    </header>
+    <section>
+      <h2>Butterfly Puzzle</h2>
+      <!-- Flexbox arranges the image pieces into four rows. -->
+      <div class="puzzle">
+        <img src="puzzle-images/puzzle1_Q.jpg" alt="Butterfly puzzle piece Q">
+        <img src="puzzle-images/puzzle1_G.jpg" alt="Butterfly puzzle piece G">
+        <img src="puzzle-images/puzzle1_A.jpg" alt="Butterfly puzzle piece A">
+        <img src="puzzle-images/puzzle1_J.jpg" alt="Butterfly puzzle piece J">
+        <img src="puzzle-images/puzzle1_M.jpg" alt="Butterfly puzzle piece M">
+        <img src="puzzle-images/puzzle1_P.jpg" alt="Butterfly puzzle piece P">
+        <img src="puzzle-images/puzzle1_B.jpg" alt="Butterfly puzzle piece B">
+        <img src="puzzle-images/puzzle1_H.jpg" alt="Butterfly puzzle piece H">
+        <img src="puzzle-images/puzzle1_O.jpg" alt="Butterfly puzzle piece O">
+        <img src="puzzle-images/puzzle1_E.jpg" alt="Butterfly puzzle piece E">
+        <img src="puzzle-images/puzzle1_N.jpg" alt="Butterfly puzzle piece N">
+        <img src="puzzle-images/puzzle1_C.jpg" alt="Butterfly puzzle piece C">
+        <img src="puzzle-images/puzzle1_I.jpg" alt="Butterfly puzzle piece I">
+        <img src="puzzle-images/puzzle1_F.jpg" alt="Butterfly puzzle piece F">
+        <img src="puzzle-images/puzzle1_L.jpg" alt="Butterfly puzzle piece L">
+        <img src="puzzle-images/puzzle1_K.jpg" alt="Butterfly puzzle piece K">
+        <!-- This extra piece does not fit, so it is hidden. -->
+        <img class="extra" src="puzzle-images/puzzle1_D.jpg"
+          alt="Extra puzzle piece D">
+      </div>
+    </section>
+    <footer>
+      <p>Completed September 29, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
