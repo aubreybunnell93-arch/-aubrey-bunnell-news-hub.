@@ -33,7 +33,7 @@ h3 { font-size: 16px; font-weight: normal; }
 }
 .dinosaur {
   width: 180px;
-  filter: hue-rotate(150deg) drop-shadow(7px 7px 3px #777);
+  filter: hue-rotate(80deg) drop-shadow(7px 7px 3px #777);
 }
 .seagull {
   width: 300px;
