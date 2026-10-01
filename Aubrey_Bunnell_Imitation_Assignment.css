@@ -1,0 +1,70 @@
+/* Aubrey Bunnell - The Imitation Assignment */
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  color: #333;
+  margin: 30px;
+}
+h1, h2 { text-align: center; }
+h2 { font-size: 22px; font-weight: normal; }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+section { text-align: center; }
+h3 { font-size: 16px; font-weight: normal; }
+.penguins {
+  width: 300px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  filter: sepia(65%);
+}
+.football {
+  width: 300px;
+  height: 160px;
+  border: 28px solid transparent;
+  border-image: url("tic-tac-toe.png") 53 repeat;
+  filter: grayscale(100%);
+}
+.dinosaur {
+  width: 180px;
+  filter: hue-rotate(150deg) drop-shadow(7px 7px 3px #777);
+}
+.seagull {
+  width: 300px;
+  height: 210px;
+  background: linear-gradient(135deg, #8288f4, #e6e7f3);
+  border: 8px solid white;
+  border-radius: 3px;
+  box-shadow: 7px 8px 5px #aaa;
+}
+.seagull img { width: 100%; height: 100%; object-fit: contain; }
+.butterfly {
+  width: 320px;
+  border-radius: 90px 0 90px 0;
+  filter: invert(100%);
+}
+.stage {
+  position: relative;
+  width: 200px;
+  height: 176px;
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #888;
+}
+.stage img { width: 100%; height: 100%; filter: blur(4px); }
+.stage span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 2px 3px #555;
+}
