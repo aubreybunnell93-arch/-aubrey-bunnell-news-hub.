@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Aubrey Bunnell | Review Cards Assignment | HTML and CSS only -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design Review Cards | Aubrey Bunnell</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f4ef; color: #243e3b; font-family: Arial, sans-serif; line-height: 1.6; }
+main { max-width: 1100px; margin: auto; padding: 40px 24px 32px; }
+header { animation: entrance 800ms ease-out both; margin-bottom: 28px; }
+.name { margin: 0; font-size: 14px; font-weight: bold; letter-spacing: .06em; }
+h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 12px 0; }
+.instructions { color: #546562; margin: 0; max-width: 680px; }
+.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+/* Each label contains a keyboard-accessible checkbox for touch/keyboard use. */
+.card { position: relative; min-height: 270px; display: block; cursor: pointer; border-radius: 16px; background: white; border: 1px solid #ccd7d1; box-shadow: 0 4px 0 #e4e8e0; overflow: hidden; }
+.toggle { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.question, .answer { display: block; padding: 24px; }
+.number { display: block; color: #657671; font-size: 12px; font-weight: bold; letter-spacing: .12em; }
+.topic { display: block; margin: 12px 0 8px; color: #3f6b58; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: .04em; }
+.question-text { display: block; font-size: 19px; font-weight: bold; line-height: 1.4; }
+.hint { display: block; margin-top: 20px; color: #657671; font-size: 12px; }
+/* Answers start hidden. Hover transitions their opacity and position in both directions. */
+.answer { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; background: #254c43; color: white; opacity: 0; transform: translateY(16px); transition: opacity 350ms ease, transform 350ms ease; pointer-events: none; }
+.answer strong { color: #d3e7bc; font-size: 12px; letter-spacing: .12em; margin-bottom: 12px; }
+.answer-text { font-size: 16px; }
+.card:hover .answer { opacity: 1; transform: translateY(0); }
+.card:has(.toggle:focus-visible) { outline: 3px solid #956320; outline-offset: 4px; }
+.toggle:focus-visible:checked ~ .answer { opacity: 1; transform: translateY(0); }
+/* Tapping toggles an answer on devices without hover. */
+@media (hover: none) {
+  .toggle:checked ~ .answer { opacity: 1; transform: translateY(0); }
+}
+footer { margin-top: 28px; font-size: 13px; color: #546562; }
+footer a { color: #254c43; }
+@keyframes entrance {
+  from { opacity: 0; transform: translateY(-18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 900px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 500px) { main { padding: 28px 18px; } .cards { grid-template-columns: 1fr; } .card { min-height: 245px; } }
+@media (prefers-reduced-motion: reduce) { header { animation-duration: 1ms; } .answer { transition-duration: 1ms; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="name">AUBREY BUNNELL · BASIC WEB DESIGN</p>
+<h1>Web Design Review Cards</h1>
+<p class="instructions">Think of the answer, then hover over a card to check it. Move away to hide it. On a phone, tap a card; with a keyboard, use Tab and Space.</p>
+</header>
+<section class="cards" aria-label="Eight web design review cards">
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: HTML">
+<span class="question"><span class="number">CARD 01 / 08</span><span class="topic">HTML</span><span class="question-text">What does HTML do?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 01</strong><span class="answer-text">HTML structures a web page using elements such as headings, paragraphs, links, and images.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: CSS">
+<span class="question"><span class="number">CARD 02 / 08</span><span class="topic">CSS</span><span class="question-text">What does CSS control?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 02</strong><span class="answer-text">CSS controls a page’s appearance, including colors, fonts, spacing, and layout.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Selectors">
+<span class="question"><span class="number">CARD 03 / 08</span><span class="topic">Selectors</span><span class="question-text">What is a CSS selector?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 03</strong><span class="answer-text">A selector identifies the HTML elements a CSS rule styles. For example, .card selects elements with class="card".</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Box model">
+<span class="question"><span class="number">CARD 04 / 08</span><span class="topic">Box model</span><span class="question-text">What are the four parts of the CSS box model?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 04</strong><span class="answer-text">From inside to outside: content, padding, border, and margin.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Transitions">
+<span class="question"><span class="number">CARD 05 / 08</span><span class="topic">Transitions</span><span class="question-text">What does a CSS transition do?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 05</strong><span class="answer-text">A transition smoothly changes a property between two states, such as changing opacity when a card is hovered.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Animations">
+<span class="question"><span class="number">CARD 06 / 08</span><span class="topic">Animations</span><span class="question-text">What is @keyframes used for?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 06</strong><span class="answer-text">@keyframes defines the stages of a CSS animation. The animation property applies those stages to an element.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Images">
+<span class="question"><span class="number">CARD 07 / 08</span><span class="topic">Images</span><span class="question-text">Why should an image have alt text?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 07</strong><span class="answer-text">Alt text describes an image’s meaning for people using screen readers and when the image cannot load.</span></span>
+</label>
+<label class="card">
+<input class="toggle" type="checkbox" aria-label="Reveal or hide answer: Responsive design">
+<span class="question"><span class="number">CARD 08 / 08</span><span class="topic">Responsive design</span><span class="question-text">What makes a page responsive?</span><span class="hint">Hover to reveal the answer ↗</span></span>
+<span class="answer"><strong>ANSWER 08</strong><span class="answer-text">Flexible layouts and media queries help a page fit different screen sizes, from phones to desktop monitors.</span></span>
+</label>
+</section>
+<footer>Review Cards Assignment · Module 5: Multimedia · <a href="https://github.com/aubreybunnell93-arch/-aubrey-bunnell-news-hub./blob/main/Aubrey_Bunnell_Review_Cards.html">View HTML and CSS on GitHub</a></footer>
+</main>
+</body>
+</html>
