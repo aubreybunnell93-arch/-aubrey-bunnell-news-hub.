@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact — Websites by Aubrey. Creative, accessible website design with pink checkerprint personality.">
+<title>Contact | Websites by Aubrey</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<!-- Shared navigation stays consistent across all six pages. -->
+<header>
+<a class="wordmark" href="index.html">WEBSITES BY <strong>Aubrey</strong>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="process.html">Process</a>
+<a href="contact.html" aria-current="page">Contact</a>
+</nav>
+</header>
+<div class="checker-strip" aria-hidden="true">
+</div>
+<main id="main">
+<section class="page-intro">
+<p class="eyebrow">Your idea starts here</p>
+<h1>Let’s make a plan.</h1>
+<p class="lead">Use this project planner to put your ideas into words.</p>
+</section>
+<section class="split contact-layout">
+<div>
+<h2>Create your project brief</h2>
+<p>This planner creates a text file for you to save. It does not send a message or book a service.</p>
+<form id="brief">
+<label for="name">Your name <span>(required)</span>
+</label>
+<input id="name" name="name" autocomplete="name" required maxlength="100">
+<label for="business">Business or project name <span>(required)</span>
+</label>
+<input id="business" name="business" required maxlength="120">
+<label for="type">What do you need?</label>
+<select id="type" name="type">
+<option>A new business website</option>A website refresh</option>A personal portfolio</option>
+<option>Other creative project</option>
+</select>
+<label for="details">Tell me about your idea <span>(required)</span>
+</label>
+<textarea id="details" name="details" rows="5" required maxlength="4000" placeholder="Who is your audience? What would you like your website to do?">
+</textarea>
+<label class="check">
+<input type="checkbox" required> I understand this saves a brief and does not send an inquiry.</label>
+<button type="submit">Download my project brief</button>
+<p id="form-status" role="status">
+</p>
+</form>
+</div>
+<aside>
+<figure class="brand-figure">
+<img src="assets/aubrey-logo.webp" alt="Websites by Aubrey logo with a pink and cream checkerboard border" width="700" height="700">
+<figcaption>Bring your own personality to your next website.</figcaption>
+</figure>
+<h2>Ideas to include</h2>
+<ul class="pretty-list">
+<li>Your main website goal</li>
+<li>The pages you need</li>
+<li>Colors and styles you love</li>
+<li>Content you already have</li>
+</ul>
+</aside>
+</section>
+</main>
+<footer>
+<div>
+<a class="wordmark" href="index.html">WEBSITES BY <strong>Aubrey</strong>
+</a>
+<p>Thoughtful design. A little personality.</p>
+</div>
+<div>
+<a href="contact.html">Plan your project</a>
+<p>Designed by Aubrey Bunnell • Student portfolio</p>
+</div>
+</footer>
+</body>
+</html>
